@@ -26,9 +26,9 @@ class App extends React.Component {
           {
             movieList && movieList.length > 0 && movieList.map((m, k) => [
               <div key={k} className="movies">
-                <div className="movie_name">{m.name || 'NA'}</div>
-                <div className="movie_rating">{m.rating || 'NA'}</div>
-                <div className="released_on">{m.releasedOn || 'NA'}</div>
+                <div style={{ marginBottom: '25px', fontSize: '25px' }}>Movie Name: <span className="movie_name">{m.name || 'NA'}</span></div>
+                <div style={{ marginBottom: '20px', fontSize: '25px' }}>Rating: <span className="movie_rating">{m.rating || 'NA'}</span></div>
+                <div style={{ marginBottom: '20px', fontSize: '25px' }}>Released On: <span className="released_on">{m.releasedOn || 'NA'}</span></div>
               </div>
             ])
           }
