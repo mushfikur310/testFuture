@@ -1,0 +1,65 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App {
+  padding: 3em;
+}
+
+.movie_list_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.movies {
+  height: 200px;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #30336b;
+}
+.movie_name {
+  color: #be2edd;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.movie_rating {
+  color: #6ab04c;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.released_on {
+  color: #22a6b3;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
