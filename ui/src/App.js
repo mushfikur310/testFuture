@@ -19,7 +19,6 @@ class App extends React.Component {
   }
   render() {
     const { movieList } = this.state;
-    console.log(movieList);
     return (
       <div className="App">
         <div className="movie_list_container">
@@ -31,6 +30,9 @@ class App extends React.Component {
                 <div style={{ marginBottom: '20px', fontSize: '25px' }}>Released On: <span className="released_on">{m.releasedOn || 'NA'}</span></div>
               </div>
             ])
+          }
+          {
+            movieList && movieList.length === 0 && <div>Movies not available!</div>
           }
         </div>
       </div>
